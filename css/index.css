@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+
 .clear {
   clear: both; }
 
@@ -18,4 +20,165 @@ nav {
   height: 200px;
   background: gray; }
 
+
+
 /*# sourceMappingURL=main.css.map */
+
+
+/*-- Note - My Code - 
+Written here because I'm having issues with my Preprocessor 
+I otherwise would have used LESS
+--*/
+
+/*-- MOBILE AND UP --*/
+/*-- Universal Styles --*/
+h1, h2, h3, h4, h5, label, legend {
+  font-family: 'Playfair Display', Serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*--- Navigation ---*/
+nav {
+  width: 100%;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 451px;
+}
+
+nav li {
+  list-style: none;
+  padding: 12px 24px;
+  background-color: black;
+}
+
+nav li:hover, nav li.active {
+  background-color: #828D2D; 
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*-- Hero --*/
+section.hero {
+  background-image: url(../images/pexels-photo-236973.jpeg);
+  background-position: bottom;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section.hero .overlay {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+}
+
+section.hero h1, section.hero h2 {
+  color: white;
+}
+
+section.hero h1 {
+  padding-top: 180px;
+  font-size: 64px;
+}
+
+section.hero.hero-about {
+  background-image: url(../images/pexels-photo-1314584.jpeg);
+}
+
+section.hero.hero-contact {
+  background-image: url(../images/pexels-photo-626986.jpeg);
+}
+/*----------------------------------*/
+/*----- image styling -----*/
+main section img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+main section {
+  padding: 40px 0;
+}
+
+/*---- text styling ----*/
+main section .text {
+  width: 80%;
+  margin: 40px 10%;
+}
+
+main section .text button, .btn-primary {
+  background-color: #828D2D;
+  border-color: #828D2D;
+  border-radius: 0;
+}
+
+button.btn-primary a, .btn-primary a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+main section .text button:hover, .btn-primary:hover {
+  background-color: #029B87;
+  border-color: #029B87;
+}
+
+div.alert {
+  width: 100%;
+  margin: 0;
+}
+
+/*-- icons --*/
+section i {
+  font-size: 40px;
+  color: #828D2D;
+}
+
+section p a {
+  color: #828D2D;
+}
+
+section p a:hover {
+  color: #029B87;
+}
+
+section.contact-info, legend {
+    text-align: center;
+  }
+
+#carouselSlides {
+    width: 100%;
+    height: 500px;
+  }
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.6);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 200px;
+  height: 500px;
+}
+
+@media (min-width: 768px){
+  section.contact-info, legend {
+    text-align: left;
+  }
+  
+}

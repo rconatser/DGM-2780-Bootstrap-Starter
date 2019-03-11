@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cozy Corner | Bootstrap 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link href="img/favicon.png" type="img/png" rel="icon"> -->
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="css/index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<section class="hero hero-contact">
+		<div class="overlay">
+			<div class="container">
+				<h1>Contact Us</h1>
+				<h2>Let's Chat!</h2>
+			</div>
+		</div>
+	</section>
+
+	<nav>
+		<li class="nav-item"><a href="index.html">Home</a></li>
+		<li class="nav-item"><a href="about.html">About</a></li>
+		<li class="active nav-item"><a href="contact.html">Contact</a></li>
+	</nav>
+
+	<div class="alert alert-warning" role="alert">
+		<span data-toggle="modal" data-target="#myModal">Don't miss our Spring Cleaning Specials! Click Here to Learn More!</span>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+
+	<main>
+		<section class="contact-info">
+			<div class="row align-items-center">
+				<!-- Uses CSS Component from Documentation -->
+				<div class="col-sm-12 col-md-6">
+					<img src="images/pexels-photo-64775.jpeg" alt="cup of coffee" />
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="text">
+						<h2>Our Contact Information</h2>
+						<div class="row align-items-center">
+							<!-- Uses CSS Component from Documentation -->
+							<div class="col-sm-12 col-md-2">
+								<p class="text-center"><i class="far fa-envelope"></i></p>
+							</div>
+							<div class="col-sm-12 col-md-10">
+								<h4>Email</h4>
+								<p><a href="#">support@cozycorner.com</a></p>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<!-- Uses CSS Component from Documentation -->
+							<div class="col-sm-12 col-md-2">
+								<p class="text-center"><i class="fas fa-phone"></i></p>
+							</div>
+							<div class="col-sm-12 col-md-10">
+								<h4>Phone</h4>
+								<p><a href="#">+44 20 5674 8940</a></p>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<!-- Uses CSS Component from Documentation -->
+							<div class="col-sm-12 col-md-2">
+								<p class="text-center"><i class="far fa-map"></i></p>
+							</div>
+							<div class="col-sm-12 col-md-10">
+								<h4>Address</h4>
+								<p>125 Bookman Street, <br />
+									London, England
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row align-items-center">
+				<!-- Uses CSS Component from Documentation -->
+				<div class="col-sm-12 col-md-6 order-2 order-md-1">
+					<!-- Uses CSS Component from Documentation -->
+					<div class="text">
+						<form class="form-horizontal">
+							<!-- Uses CSS Component from Documentation -->
+							<fieldset>
+
+								<!-- Form Name -->
+								<legend>Let's Get in Touch</legend>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<!-- Uses CSS Component from Documentation -->
+									<label class="col-md-12 control-label" for="name">Name</label>
+									<div class="col-md-12">
+										<input id="name" name="name" type="text" placeholder="Jane Doe" class="form-control input-md">
+										<span class="help-block">First and Last Name</span>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<!-- Uses CSS Component from Documentation -->
+									<label class="col-md-12 control-label" for="email">Email</label>
+									<div class="col-md-12">
+										<input id="email" name="email" type="text" placeholder="some@email.com" class="form-control input-md">
+										<span class="help-block">Your Full Email</span>
+									</div>
+								</div>
+
+								<!-- Textarea -->
+								<div class="form-group">
+									<!-- Uses CSS Component from Documentation -->
+									<label class="col-md-12 control-label" for="message">Message</label>
+									<div class="col-md-12">
+										<textarea class="form-control" id="message" name="message">What's on your mind?</textarea>
+									</div>
+								</div>
+
+								<!-- Button -->
+								<div class="form-group">
+									<!-- Uses CSS Component from Documentation -->
+									<label class="col-md-12 control-label" for="submit"></label>
+									<div class="col-md-12">
+										<button id="submit" name="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+
+							</fieldset>
+						</form>
+
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 order-1 order-md-2">
+					<!-- Uses CSS Component from Documentation -->
+					<img src="images/pexels-photo-1451475.jpeg" alt="book store" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Our Spring Specials</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+					</div>
+					<div class="modal-body">
+						<p>Arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed. Ac placerat vestibulum lectus mauris ultrices eros in cursus turpis. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Congue mauris rhoncus aenean vel elit. Massa placerat duis ultricies lacus sed. In cursus turpis massa tincidunt dui ut. Sit amet consectetur adipiscing elit pellentesque habitant. Amet facilisis magna etiam tempor orci eu lobortis.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary"><a href="contact.html">Contact Us</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<p class="text-center">&copy; 2019 | Created by Rachel Conatser | DGM 2780 | Spring 2019</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
